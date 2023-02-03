@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export const FrontPage = () => {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    const difference = +new Date(`${year}, 02, 15`) - +new Date();
+    const difference = +new Date(`${year}/02/15`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
